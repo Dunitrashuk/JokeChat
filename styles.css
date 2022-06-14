@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    height: 10vh;
+    background: #eaeaea;
+}
+
+#messageBox {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    width: 70%;
+    background-color: transparent;
+}
+
+#messages {
+    padding: 10px;
+    height: 83vh;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+#messages::-webkit-scrollbar {
+    display: none;
+}
+
+#sendButton {
+    font-family: Poppins, sans-serif;
+    padding: 8px 10px;
+    margin: 0 5px 0 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #e7e7e7;
+}
+
+.inputContainer {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blob {
+    border-radius: 12px;
+    background-color: #919191;
+    font-family: Poppins, sans-serif;
+    max-width: 60%;
+    color: #fff;
+    margin: 4px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.message-row.sent {
+    text-align: right;
+}
+
+.message-row.received .blob{
+    background-color: #07c;
+}
+
+.sendJoke {
+    font-family: Poppins, sans-serif;
+    padding: 8px 10px;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    border: 1px solid #07c;
+    background-color: #0077cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sendJoke:hover {
+    background-color: #005694;
+}
